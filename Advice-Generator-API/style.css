@@ -75,5 +75,8 @@ h2{
    .divider{
     content: url(images/pattern-divider-mobile.svg);
    }
+   .attribution{
+    margin: 10% 0 0 16%;
+   }
 }
     
