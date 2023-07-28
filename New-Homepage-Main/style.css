@@ -150,11 +150,12 @@
         gap: 18px;
         /* width: 100%; */
     }
-    .main_img{
+     .main_img{
         display: none;
     }
     .main_img2{
         display: block;
+        width: 95%;
     }
     .content{
         display: flex;
@@ -162,7 +163,7 @@
         gap: 12px;
     }
     .content h1{
-        width: 120%;
+        width: 110%;
     }
     .content p{
         width: 100%;
