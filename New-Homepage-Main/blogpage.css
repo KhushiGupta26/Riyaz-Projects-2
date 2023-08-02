@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 35px 3% .025%;
+}
+.navbar{
+    display: flex;
+    gap: 30px;
+}
+.navbar a{
+    font-size: 18px;
+    color: hsl(236, 13%, 42%);
+    cursor: pointer;
+    /* transition: all .3s ease; */
+}
+.navbar a:hover{
+    color: hsl(5, 85%, 63%);
+}
+#menu-icon{
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+    z-index: 10001;
+    margin-left: 70%;
+    display: none;
+}
+#menu-icon.bx-x{
+    margin-left: 55%;
+}
+/* MAIN */
+.main{
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+   display: flex;
+   font-size: 4rem;
+   font-family: 'Brush Script MT', cursive;
+   letter-spacing: 4px;
+   font-weight: 100;
+}
+.icon{
+    font-size: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-variant: small-caps;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+.blogpageimg{
+    width: 50%;
+    margin-top: 2%;
+}
+p{  
+    font-size: 20px;
+    margin-top: 2%;
+    width: 50%;
+}
+h3{
+    font-size: 22px;
+    margin-top: 2%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.quote{
+    background-color: #f9e2d3;
+    font-family: cursive;
+    letter-spacing: 2px;
+    padding: 2%;
+    text-align: center;
+}
+.btn{
+    border-radius : 25px ;
+    border: none;
+    background : rgb(225, 180, 90) ;
+    padding: 1%;
+    text-align: center;
+    transition : all .5s ease ;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(82, 93, 102);
+    cursor: pointer;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 20px rgba(6, 6, 6, 0.2);
+}
+/* CONATINER */
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: none;
+}
+.heading{
+    border-radius : 20px ;
+    border: none;
+    background : #f3dccc;
+    box-shadow: 0 15px 20px rgba(6, 6, 6, 0.2);
+    font-family: cursive;
+    letter-spacing: 2px;
+    padding: 2%;
+    font-size: 1.5rem;
+    color: rgb(99, 96, 96);
+}
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: rgba(121, 117, 117, 0.96);
+    color: aliceblue;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* MEDIA-QUERY */
+@media screen and (max-width:1250px){
+    #menu-icon{
+        display: inline-block;
+        margin-left: 150%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        padding-top: 120px;
+        padding-left: 30px;
+        cursor: pointer;
+        z-index: 1;
+        width: 200px;
+        height: 100vh;
+    }
+    .navbar.open{
+        right: -1%;
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .blogpageimg{
+        width: 70%;
+    }
+    p{
+        width: 80%;
+    }
+    h2{
+        text-align: center;
+        width: 70%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-size: 1.5rem;
+    }
+    .btn{
+        padding: 3%;
+        font-size: 18px;
+    }
+    .heading{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    h3{
+        text-align: center;
+        width: 90%;
+    }
+}
