@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: sans-serif;
+    /* background-color: aliceblue; */
 }
 .nav{
     display: flex;
@@ -215,5 +216,3 @@
         right: -1%;
     }
 }
-
-
