@@ -62,9 +62,10 @@ h1{
     flex-direction: column;
 }
 h2{
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
     margin-top: 2%;
     font-size: 2rem;
+    font-weight: 800;
 }
 .blogpageimg{
     width: 50%;
@@ -78,29 +79,30 @@ p{
 h3{
     font-size: 22px;
     margin-top: 2%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 .quote{
-    background-color: #f9e2d3;
+    background-color: #edccb5;
     font-family: cursive;
     letter-spacing: 2px;
     padding: 2%;
     text-align: center;
 }
 .btn{
-    border-radius : 25px ;
-    border: none;
-    background : rgb(225, 180, 90) ;
+    /* border-radius : 25px ; */
     padding: 1%;
     text-align: center;
     transition : all .5s ease ;
     font-size: 15px;
     font-weight: 600;
-    color: rgb(82, 93, 102);
+    color: rgb(252, 253, 253);
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid hsl(5, 50%, 43%);
     cursor: pointer;
 }
 .btn:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
+    background-color: hsl(240, 100%, 5%);
     box-shadow: 0 20px 20px rgba(6, 6, 6, 0.2);
 }
 /* CONATINER */
